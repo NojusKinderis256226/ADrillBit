@@ -8,7 +8,7 @@ from PIL import Image
 import tensorflow as tf
 
 # ---------- config ----------
-MODEL_PATH = "cnn_v4_finetuned.keras"
+MODEL_PATH = "cnn_v4_saved_model.h5"
 CLASSES_PATH = "classes.json"
 IMG_SIZE = (224, 224)
 CONFIDENCE_WARN = 60
