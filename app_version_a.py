@@ -134,7 +134,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 # ---------- load model & labels ----------
 @st.cache_resource
 def load_model():
-    m = tf.keras.models.load_model(MODEL_PATH)
+    m = tf.keras.models.load_model(MODEL_PATH, compile=False)
     with open(CLASSES_PATH) as f:
         c = json.load(f)
     return m, c
